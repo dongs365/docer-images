@@ -19,7 +19,7 @@ docker pull registry.cn-shenzhen.aliyuncs.com/grc/kube-proxy:v1.13.2
 docker pull registry.cn-shenzhen.aliyuncs.com/grc/pause:3.1
 docker pull registry.cn-shenzhen.aliyuncs.com/grc/etcd:3.2.24
 docker pull registry.cn-shenzhen.aliyuncs.com/grc/coredns:1.2.6
-docker pull registry.cn-shenzhen.aliyuncs.com/grc/kubernetes-dashboard-amd64:v1.10.0
+docker pull registry.cn-shenzhen.aliyuncs.com/grc/kubernetes-dashboard-amd64:v1.10.1
 ```
 
 ### docker tag images
@@ -31,7 +31,7 @@ docker tag registry.cn-shenzhen.aliyuncs.com/grc/kube-proxy:v1.13.2 k8s.gcr.io/k
 docker tag registry.cn-shenzhen.aliyuncs.com/grc/pause:3.1 k8s.gcr.io/pause:3.1
 docker tag registry.cn-shenzhen.aliyuncs.com/grc/etcd:3.2.24 k8s.gcr.io/etcd:3.2.24
 docker tag registry.cn-shenzhen.aliyuncs.com/grc/coredns:1.2.6 k8s.gcr.io/coredns:1.2.6
-docker tag registry.cn-shenzhen.aliyuncs.com/grc/kubernetes-dashboard-amd64:v1.10.0 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0
+docker tag registry.cn-shenzhen.aliyuncs.com/grc/kubernetes-dashboard-amd64:v1.10.0 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 ```
 
 ### shell auto
@@ -44,7 +44,7 @@ images=(
     pause:3.1
     etcd:3.2.24
     coredns:1.2.6
-    kubernetes-dashboard-amd64:v1.10.0
+    kubernetes-dashboard-amd64:v1.10.1
 )
 for imageName in ${images[@]} ; do
     docker pull registry.cn-shenzhen.aliyuncs.com/grc/$imageName
