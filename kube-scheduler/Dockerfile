@@ -1,2 +1,2 @@
-FROM k8s.gcr.io/kube-scheduler:v1.13.2
+FROM k8s.gcr.io/kube-scheduler:v1.13.3
 MAINTAINER dongs365
