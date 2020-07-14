@@ -1,2 +1,2 @@
-FROM k8s.gcr.io/etcd:3.4.3-0
+FROM calico/pod2daemon-flexvol:v3.15.1
 MAINTAINER dongs365
