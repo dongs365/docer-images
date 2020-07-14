@@ -13,3 +13,7 @@ ki=(`echo $im1 $im2 $im3 $im4`)
 for i in ${ki[@]}; do mkdir `echo ${i}|awk -F / '{print $2}'|awk -F : '{print $1}'`; done
 #创建dockerfile
 for i in ${ki[@]}; do echo -e "FROM ${i}\nMAINTAINER dongs365" > `echo ${i}|awk -F / '{print $2}'|awk -F : '{print $1}'`/Dockerfile; done
+mv coreos flannel
+git add -A
+git commit -m ":whale: `date`"
+git push
