@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 #获取images列表
 #基础镜像
 im1=`kubeadm config images list`
