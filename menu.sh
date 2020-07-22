@@ -76,6 +76,7 @@ menu
 echo "镜像删除-阿里"
 docker rmi $(docker images|grep registry|awk '{print $1 ":" $2 }')
 menu
+;;
 8)
 clear
 menu
