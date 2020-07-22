@@ -36,8 +36,9 @@ cat << EOF
 `echo -e "\033[35m 4)镜像上传-阿里\033[0m"`
 `echo -e "\033[35m 5)镜像下载-阿里\033[0m"`
 `echo -e "\033[35m 6)镜像修改-默认\033[0m"`
-`echo -e "\033[35m 7)返回菜单\033[0m"`
-`echo -e "\033[35m 8)退出程序\033[0m"`
+`echo -e "\033[35m 7)镜像删除-阿里\033[0m"`
+`echo -e "\033[35m 8)返回菜单\033[0m"`
+`echo -e "\033[35m 9)退出程序\033[0m"`
 EOF
 read -p "请输入要执行的操作：" num1
 case $num1 in
@@ -72,10 +73,14 @@ for ((i=0;i<${#images0[@]};i++));do docker tag  ${images4[i]} ${images0[i]};done
 menu
 ;;
 7)
+echo "镜像删除-阿里"
+docker rmi $(docker images|grep registry|awk '{print $1 ":" $2 }')
+menu
+8)
 clear
 menu
 ;;
-8)
+9)
 exit 0
 esac
 }
