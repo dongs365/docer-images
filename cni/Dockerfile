@@ -1,2 +1,2 @@
-FROM calico/cni:v3.15.1
+FROM calico/cni:v3.16.1
 MAINTAINER dongs365
