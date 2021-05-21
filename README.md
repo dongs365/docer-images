@@ -1,4 +1,11 @@
 # kubernetes images
+```mermaid
+graph LR;
+　　shell -->| up Dockerfile|GitHub;
+　　GitHub --> 阿里镜像;
+　　阿里镜像 --> |up images|End;
+```
+
 ## docker-k8s.gcr.io
 ```
 k8s.gcr.io/kube-apiserver:v1.18.5  
