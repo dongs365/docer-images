@@ -1,2 +1,2 @@
-FROM k8s.gcr.io/kube-scheduler:v1.22.2
+FROM registry.k8s.io/kube-scheduler:v1.25.0
 MAINTAINER dongs365

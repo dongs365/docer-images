@@ -1,2 +1,2 @@
-FROM k8s.gcr.io/kube-controller-manager:v1.22.2
+FROM registry.k8s.io/kube-controller-manager:v1.25.0
 MAINTAINER dongs365
