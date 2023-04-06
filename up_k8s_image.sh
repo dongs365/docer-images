@@ -3,7 +3,7 @@
 #基础镜像
 im1=`kubeadm config images list`
 #ui镜像
-im2=`curl -s https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml|grep image: |awk '{print $2}'`
+im2=`curl -s https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml|grep image: |awk '{print $2}'`
 #网络镜像
 im3=`curl -s https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml |grep image|uniq|awk '{print $2}'`
 im4=`curl -s https://docs.projectcalico.org/manifests/calico.yaml |grep image|uniq|awk '{print $2}'`
