@@ -1,2 +1,2 @@
-FROM flannelcni/flannel:v0.19.1
+FROM docker.io/flannel/flannel:v0.21.4
 MAINTAINER dongs365
